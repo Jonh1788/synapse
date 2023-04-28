@@ -1,1 +1,1 @@
-web: gunicorn synapse/synapse/wsgi.py
+web: gunicorn synapse.wsgi
