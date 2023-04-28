@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600&family=Poppins:wght@400;600;800&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #252525;
+    height: 100vh;
+    display: block;
+
+
+}
+
+.aviso
+{
+    margin-top: 20px;
+    color: #fff;
+    font-size: 800;
+}
+
+header h1{
+    margin-top: 5px;
+    text-align: center;
+    border-top: solid 2px #813185;
+    padding-bottom: 0px;
+    border-bottom: solid 2px #813185;
+ 
+
+}
+
+.c-loader
+{   
+    margin: auto;
+    margin-top: 30px;
+    animation: is-rotating 1s infinite;
+    border: 6px solid #e5e5e5;
+    border-top-color: #51d4db;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+@keyframes is-rotating {
+    to {
+
+        transform: rotate(1turn);
+    }
+}
+.logo{
+
+    height: 150px;
+    min-width: 200px;
+    margin: 0;
+   
+}
+
+main{
+    margin-top: 25px;
+    text-align: center;
+}
+
+main button{
+    margin-top: 20px;
+    margin-bottom: 8px;
+    width: 200px;
+    font-weight: 800;
+    background: #1231ec;
+    color: #fff;
+    border-style: none;  
+    height: 30px; 
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+main button:hover
+{
+  background: #2d4aee;
+}
+
+.p1 {
+    color: #fff;
+    font-weight: 600;
+}
+
+.p2{
+    margin-top: 30px;
+    color: #fff;        
+}
+
+.mines {
+
+    margin-top: 50px;
+    color: #6ac0ef;
+
+}
+
+.tentatives{
+    color: #6ac0ef;
+}
+
+.atencao {
+    margin-top: 30px;
+    color: #fff;
+}
+
+.img1{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+}
+
+.sumir{
+
+    display: none;
+}
+
+#grid-container
+{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 2px;    
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-top: 50px;
+    
+}
+
+.grid-item
+{
+
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.grid-item > img
+{
+    height: 40px;
+    width: 40px;
+}

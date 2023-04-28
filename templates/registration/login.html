@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Login Synapse</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'images/logosynapse2.png' %}" alt="Logo synapseia">
+        <p class="paragrafo">Faça seu login com os dados utilizados na compra!</p>
+        <form class="formulario" id="formulario-login" method="post">
+            {% csrf_token %}
+        <label for="email">EMAIL</label>
+        <input  name="email" id="email" type="text" placeholder="seuemail@gmail.com" required>
+        <label for="senha">SENHA</label>
+        <input  name="senha"  id="senha" type="password" placeholder="************" required>
+        <button id="btn" type="button" value="submit" onclick="verificarValidade()">ENTRAR</button>
+        </form>
+        <p class="paragrafo">Algum problema para fazer login?</p>
+        <p class="suporte">Envie um e-mail para: suporte@synapseia.pro</p>
+    </div>
+
+    <script src="{% static 'javascript/script2.js' %}"></script>
+</body>
+</html>

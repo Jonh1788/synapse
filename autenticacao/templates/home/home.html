@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style2.css' %}">
+    <title>Bot Enzo</title>
+</head>
+<body>
+    <header>
+        <h1><img class="logo" src="{% static 'images/logosynapse2.png' %}" alt=""></h1>
+    </header>
+<main>
+
+    <p class="p1" >Clique no botão abaixo para a IA verificar uma entrada!</p>
+
+    <p id="timeout" class="sumir aviso">Aguarde a reativação da IA...</p>
+
+    <button id="btn" onclick="iniciar()">🤖 Verificar Entrada</button>
+
+    <p id="iaBusca" class="sumir p2">A nossa IA está verificando uma entrada...</p>
+
+    <p id="carregar" class="sumir c-loader"></p>
+
+    <h2 id="contadorDeMinas" class="sumir mines" >Minas: 5</h2>
+
+    <h2 id="contadorDeTentativas" class="sumir tentatives">Tentativas: 2</h2>
+
+    <a href="https://bit.ly/mineszepjogarsh" id="link"class="sumir atencao">Link do Jogo:(Clique Aqui)</a>
+
+    <p id="atencao" class="sumir atencao">Atenção: o sinal é válido para os 3 próximos minutos!</p>
+
+    <div class="sumir" id="grid-container">
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+        <div class="sumir grid-item"></div>
+    </div>
+
+</main>
+    <script src="{% static 'javascript/script.js' %}"></script>
+</body>
+</html>
