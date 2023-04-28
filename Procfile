@@ -1,1 +1,1 @@
-web: gunicorn synapse.synapse.wsgi:application
+web: gunicorn projeto1.wsgi:application
