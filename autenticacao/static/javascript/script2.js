@@ -2,7 +2,6 @@ btn = document.getElementById("btn");
 form = document.getElementById("formulario-login")
 
 btn.addEventListener("click", verificarValidade)
-alert("teste")
 function verificarValidade()
 {
     email = document.getElementById("email").value;
