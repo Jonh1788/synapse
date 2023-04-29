@@ -26,6 +26,7 @@ header h1{
     border-top: solid 2px #813185;
     padding-bottom: 0px;
     border-bottom: solid 2px #813185;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
  
 
 }
@@ -72,6 +73,7 @@ main button{
     border-radius: 5px;
     font-size: 17px;
     cursor: pointer;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
 }
 
 main button:hover
@@ -139,4 +141,25 @@ main button:hover
 {
     height: 40px;
     width: 40px;
+}
+
+.link1 {
+
+    border: solid 1px #1231ec;
+    color: #fff;
+    background-color: #1231ec;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-decoration: none;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-weight: 800;
+    box-shadow: 3px 4px 7px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;
+}
+
+.link1:hover
+{
+    background-color: #2d4aee;
 }

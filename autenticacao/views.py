@@ -23,8 +23,10 @@ def salvar_usuario(request):
         return HttpResponse(status=201)
 
 # Create your views here.
-@login_required
+
 def Home(request):
+    if request.user.is_authenticated == False:
+        return redirect('../')
     return render(request, 'home/home.html')
 
 def fazer_login(request):
